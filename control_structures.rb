@@ -1,5 +1,5 @@
 
-def identify_class(obj)
+def identify_class(obj) 
     # write your case control structure here
     case(obj)
         when Hacker

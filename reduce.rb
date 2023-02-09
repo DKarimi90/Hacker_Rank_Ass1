@@ -4,5 +4,6 @@ def sum_terms(n)
       (1..n).each do |num|
           numbers << ((num * num) + 1)
       end 
-      numbers.sum
+      puts numbers.sum
   end 
+  sum_terms

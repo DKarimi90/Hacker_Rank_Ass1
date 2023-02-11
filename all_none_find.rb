@@ -1,8 +1,21 @@
+# BDD => input: hash output: TrueClass  or FalseClass
+# pseudocode
+# START
+# 1.accessing the hash elements
+# 2.check if any key in the hash is an interger
+# 3.If true it returns true if false it returns false
+# 4.END
 def func_any(hash)
     # Check and return true if any key object within the hash is of the type Integer
     # If not found, return false.
     hash.any? {|key, value| key.is_a? Integer }
 end
+# psuedocode
+# START
+# 1.accessing the hash elements
+# 2.check if any value in the hash is an interger and is less than 10
+# 3.If true it returns true if false it returns false
+# 4.END
 
 def func_all(hash)
     # Check and return true if all the values within the hash are Integers and are < 10
@@ -11,12 +24,25 @@ def func_all(hash)
     end
 end
 
+# psuedocode
+# START
+# 1.accessing the hash elements
+# 2.check if none of the values in the hash are nil
+# 3.If true it returns false
+# 4.END
 def func_none(hash)
     # Check and return true if none of the values within the hash are nil
     # If any value contains nil, return false.
     hash.none? { |key, value| value.nil? }
 end
 
+# psuedocode
+# START
+# 1.accessing the hash elements
+# 2.Check and return the first object that satisfies either of the following properties:
+# 3.There is a [key, value] pair where the key and value are both Integers and the value is < 20 
+# 4.There is a [key, value] pair where the key and value are both Strings and the value starts with `a`.
+# 5.END
 def func_find(hash)
     # Check and return the first object that satisfies either of the following properties:
     #   1. There is a [key, value] pair where the key and value are both Integers and the value is < 20 
